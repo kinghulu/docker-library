@@ -1,0 +1,1 @@
+FROM gcr.io/tekton-releases/github.com/tektoncd/dashboard/cmd/dashboard@sha256:1ab6db4fa26a8b17c190c5db8a12fd75dfcc0d22f10ceb7a086003591634ea1d
