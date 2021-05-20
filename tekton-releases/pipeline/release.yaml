@@ -1747,25 +1747,25 @@ spec:
               # These images are built on-demand by `ko resolve` and are replaced
               # by image references by digest.
               '-kubeconfig-writer-image',
-              'registry.cn-beijing.aliyuncs.com/xes_sls/tektoncd_kubeconfigwriter:v0.24.1',
+              'yaohuitao/tektoncd-kubeconfigwriter:v0.24.1',
               '-git-image',
-              'registry.cn-beijing.aliyuncs.com/xes_sls/tektoncd-git-init:v0.24.1',
+              'yaohuitao/tektoncd-git-init:v0.24.1',
               '-entrypoint-image',
-              'registry.cn-beijing.aliyuncs.com/xes_sls/tektoncd_entrypoint:v0.24.1',
+              'yaohuitao/tektoncd-entrypoint:v0.24.1',
               '-nop-image',
-              'registry.cn-beijing.aliyuncs.com/xes_sls/tektoncd_nop:v0.24.1',
+              'yaohuitao/tektoncd-nop:v0.24.1',
               '-imagedigest-exporter-image',
-              'registry.cn-beijing.aliyuncs.com/xes_sls/tektoncd_imagedigestexporter:v0.24.1',
+              'yaohuitao/tektoncd-imagedigestexporter:v0.24.1',
               '-pr-image',
-              'registry.cn-beijing.aliyuncs.com/xes_sls/tekton-pullrequest-init:v0.24.1',
+              'yaohuitao/tekton-pullrequest-init:v0.24.1',
               # This is gcr.io/google.com/cloudsdktool/cloud-sdk:302.0.0-slim
               '-gsutil-image',
-              'registry.cn-beijing.aliyuncs.com/xes_sls/tektoncd-cloud-sdk:v0.24.1',
+              'yaohuitao/tektoncd-cloud-sdk:v0.24.1',
               # The shell image must be root in order to create directories and copy files to PVCs.
               # gcr.io/distroless/base:debug as of Apirl 17, 2021
               # image shall not contains tag, so it will be supported on a runtime like cri-o
               '-shell-image',
-              'registry.cn-beijing.aliyuncs.com/xes_sls/tektoncd_base:v0.24.1'
+              'yaohuitao/tektoncd-base:v0.24.1'
             ]
           volumeMounts:
             - name: config-logging
